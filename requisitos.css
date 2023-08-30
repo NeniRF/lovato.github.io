@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+h1{font-size: 3em;}
+h2{font-size:  5em;}
+h3{font-size:  2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(31, 32, 67);
+}
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    color: white;
+    background-color: black ;
+}
+button:hover{
+    background-color: orange;
+}
+.color-acento{
+    color: orange;
+}
+.contenedor{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    background-color: rgb(47, 49, 87);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: gold;
+    font-size: 1.70em;
+}
+header .contenedor{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+header nav{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding-bottom: 25px;
+   height: 30x;
+  line-height: 70px;
+  text-align: center;
+
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+}
+header a:hover{
+    background-color: orange;
+}
+@media (min-width: 720px){
+    header .contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 50px;
+        top: auto;
+    }
+}
+.cuadro{
+    margin: auto;
+width: 1000px;
+height: 600px;
+background-color:rgba(167, 0, 0, 0.0);
+}
+.Requisitos{
+    position: fixed;
+    width: 318px;
+    height: 425px;
+    background-color: rgba(50, 206, 253, 0.4);
+    top: 200px;
+    text-align: center;
+    box-shadow: 0px 15px 25px 
+}
+.horarios{
+    position: fixed;
+    width: 318px;
+    height: 425px;
+    background-color: rgba(50, 206, 253, 0.4);
+    top: 200px;
+    left: 480px;
+    text-align: center;
+    box-shadow: 0px 15px 25px 
+}
+.precio{
+    position: fixed;
+    width: 318px;
+    height: 425px;
+    background-color: rgba(50, 206, 253, 0.4);
+    top: 200px;
+    left: 820px;
+    text-align: center;
+    box-shadow: 0px 15px 25px 
+}

@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+h1{font-size: 3em;}
+h2{font-size:  5em;}
+h3{font-size:  2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(31, 32, 67);
+}
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    color: white;
+    background-color: black ;
+}
+button:hover{
+    background-color: orange;
+}
+.color-acento{
+    color: orange;
+}
+.contenedor{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    background-color: rgb(47, 49, 87);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: gold;
+    font-size: 1.70em;
+}
+header .contenedor{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+header nav{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding-bottom: 25px;
+   height: 30x;
+  line-height: 70px;
+  text-align: center;
+
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+}
+header a:hover{
+    background-color: orange;
+}
+@media (min-width: 720px){
+    header .contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 50px;
+        top: auto;
+    }
+}
+.Formacontenedor{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+.Formacontenedor h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: white;
+}
+.Formacontenedor b {
+    color: white;
+}
+.Formacontenedor p{
+    font-size: 17px;
+    line-height: 1.6px;
+    margin-bottom: 30px;
+}
+.Formacontenedor a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15xp;
+    color: white;
+    font-weight: 700;
+}
+.Formacontenedor a i{
+    color: orange;
+    margin-right: 10px;
+}
+.Formacontenedor form .informacion, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+    background-color: orange;
+}
+.Formacontenedor form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.Formacontenedor .btnenviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: orange;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.Formacontenedor .btnenviar{
+    background: black;
+}

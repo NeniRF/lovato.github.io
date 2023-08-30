@@ -1,0 +1,602 @@
+* {
+    box-sizing: border-box;
+}
+h1{font-size: 3em;}
+h2{font-size:  5em;}
+h3{font-size:  2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(31, 32, 67);
+}
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    color: white;
+    background-color: black ;
+}
+button:hover{
+    background-color: orange;
+}
+.color-acento{
+    color: orange;
+}
+.contenedor{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    background-color: rgb(47, 49, 87);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: gold;
+    font-size: 1.70em;
+}
+header .contenedor{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+header nav{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding-bottom: 25px;
+   height: 30x;
+  line-height: 70px;
+  text-align: center;
+
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+}
+header a:hover{
+    background-color: orange;
+}
+
+.Turismo {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    height: 100hv;
+}
+.Turismo figure{
+    position: relative;
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px 
+    rgb(0,0,0,0.50);
+    cursor: pointer;
+}
+.Turismo figure img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.Turismo figure .CapaT{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(20, 74, 191, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.Turismo figure:hover .CapaT{
+    opacity: 1;
+    visibility: visible;
+}
+.Turismo figure:hover .CapaT h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.Turismo figure .CapaT h3{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+.Turismo figure .CapaT p{
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+.Computo {
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 100hv;
+}
+.Computo figure{
+    position:relative;
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px 
+    rgb(0,0,0,0.50);
+    cursor: pointer;
+}
+.Computo figure img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.Computo figure .CapaC{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(20, 74, 191, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.Computo figure:hover .CapaC{
+    opacity: 1;
+    visibility: visible;
+}
+.Computo figure:hover .CapaC h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.Computo figure .CapaC h3{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+.Computo figure .CapaC p{
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+.Mecanica {
+    padding-top: -300;
+    width: 100%;
+    display: flex;
+    justify-content:right ;
+    align-items: right;
+    height: 100hv;
+}
+.Mecanica figure{
+    position: relative;
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px 
+    rgb(0,0,0,0.50);
+    cursor: pointer;
+}
+.Mecanica figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.Mecanica figure .CapaM{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(20, 74, 191, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.Mecanica figure:hover .CapaM{
+    opacity: 1;
+    visibility: visible;
+}
+.Mecanica figure:hover .CapaM h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.Mecanica figure .CapaM h3{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+.Mecanica figure .CapaM p{
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+.Ingles {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 100hv;
+}
+.Ingles figure{
+    position: relative;
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px 
+    rgb(0,0,0,0.50);
+    cursor: pointer;
+}
+.Ingles figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.Ingles figure .CapaI{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(20, 74, 191, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.Ingles figure:hover .CapaI{
+    opacity: 1;
+    visibility: visible;
+}
+.Ingles figure:hover .CapaI h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.Ingles figure .CapaI h3{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+.Ingles figure .CapaI p{
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}.Salud {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    height: 100hv;
+}
+.Salud figure{
+    position: relative;
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px 
+    rgb(0,0,0,0.50);
+    cursor: pointer;
+}
+.Salud figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.Salud figure .CapaS{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(20, 74, 191, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.Salud figure:hover .CapaS{
+    opacity: 1;
+    visibility: visible;
+}
+.Salud figure:hover .CapaS h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.Salud figure .CapaS h3{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+.Salud figure .CapaS p{
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+.Electricidad {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 100hv;
+}
+.Electricidad figure{
+    position: relative;
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px 
+    rgb(0,0,0,0.50);
+    cursor: pointer;
+}
+.Electricidad figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.Electricidad figure .CapaE{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(20, 74, 191, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.Electricidad figure:hover .CapaE{
+    opacity: 1;
+    visibility: visible;
+}
+.Electricidad figure:hover .CapaE h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.Electricidad figure .CapaE h3{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+.Electricidad figure .CapaE p{
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+.ING {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    height: 100hv;
+}
+.ING figure{
+    position: relative;
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px 
+    rgb(0,0,0,0.50);
+    cursor: pointer;
+}
+.ING figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.ING figure .CapaV{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(20, 74, 191, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.ING figure:hover .CapaV{
+    opacity: 1;
+    visibility: visible;
+}
+.ING figure:hover .CapaV h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.ING figure .CapaV h3{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+.ING figure .CapaV p{
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+.Contador {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 100hv;
+}
+.Contador figure{
+    position: relative;
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px 
+    rgb(0,0,0,0.50);
+    cursor: pointer;
+}
+.Contador figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.Contador figure .CapaCS{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(20, 74, 191, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.Contador figure:hover .CapaCS{
+    opacity: 1;
+    visibility: visible;
+}
+.Contador figure:hover .CapaCS h3{
+    font-weight: bold;
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.Contador figure .CapaCS h3{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+.Contador figure .CapaCS p{
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+.General {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    height: 100hv;
+}
+.General figure{
+    position: relative;
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px 
+    rgb(0,0,0,0.50);
+    cursor: pointer;
+}
+.General figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.General figure .CapaG{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(20, 74, 191, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.General figure:hover .CapaG{
+    opacity: 1;
+    visibility: visible;
+}
+.General figure:hover .CapaG h3{
+    font-weight: bold;
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.General figure .CapaG h3{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+.General figure .CapaG p{
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+}
+@media (min-width: 720px){
+    header .contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 50px;
+        top: auto;
+    }
+}
